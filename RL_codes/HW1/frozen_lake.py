@@ -101,14 +101,16 @@ class FrozenLakeEnv(discrete_env.DiscreteEnv):
                                 newrow, newcol = inc(row, col, b)
                                 newstate = to_s(newrow, newcol)
                                 newletter = desc[newrow, newcol]
-                                done = bytes(newletter) in b'GH'
+                                done = bytes(newletter) in b'G'# edit
+                                fell = bytes(newletter) in b'H'# edit
                                 rew = float(newletter == b'G')
                                 li.append((0.8 if b==a else 0.1, newstate, rew, done))
                         else:
                             newrow, newcol = inc(row, col, a)
                             newstate = to_s(newrow, newcol)
                             newletter = desc[newrow, newcol]
-                            done = bytes(newletter) in b'GH'
+                            done = bytes(newletter) in b'G' #edit
+                            fell = bytes(newletter) in b'H' #edit
                             rew = float(newletter == b'G')
                             li.append((1.0, newstate, rew, done))
 
