@@ -83,7 +83,8 @@ class NatureQN(Linear):
         out = None
         ##############################################################
         ################ YOUR CODE HERE - 4-5 lines lines ################
-        state_flattenned = torch.flatten(state,start_dim=1)
+        state_flattenned = state#torch.flatten(state,start_dim=0,end_dim=2)
+        print(f"state_flattenned shape: {state_flattenned.shape}")
         if network == 'q_network':
             out = self.q_network(state_flattenned)
         elif network == 'target_network':

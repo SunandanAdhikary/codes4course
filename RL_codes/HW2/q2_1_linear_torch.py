@@ -128,8 +128,9 @@ class Linear(DQN):
         ##############################################################
         ##################### YOUR CODE HERE - 3-5 lines #############
         q_sample = rewards + gamma * torch.max(target_q_values, dim=1)[0] * ~done_mask
-        q = torch.sum(q_values * [torch.arange(q_values.shape[0]), actions])
-        self.loss = F.mse_loss(q_sample, q)
+        q = torch.sum(q_values * F.one_hot(actions.long()), dim=1)
+        self.loss = F.mse_loss(q_sample, q, reduction='mean')
+        print(self.loss)
         ##############################################################
         ######################## END YOUR CODE #######################
 

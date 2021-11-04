@@ -1,0 +1,84 @@
+2021-11-03 22:43:08,290:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 22:43:08,536:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:43:08,538:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:43:08,543:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:43:08,547:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:43:08,886:INFO: Evaluating...
+2021-11-03 22:43:08,903:INFO: Average reward: -1.50 +/- 0.00
+2021-11-04 07:11:38,222:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:11:38,409:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:11:38,411:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:11:38,412:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:11:38,413:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:11:38,715:INFO: Evaluating...
+2021-11-04 07:11:38,731:INFO: Average reward: 1.00 +/- 0.00
+2021-11-04 07:13:00,045:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:13:00,235:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:13:00,237:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:13:00,239:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:13:00,241:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:13:00,565:INFO: Evaluating...
+2021-11-04 07:13:00,579:INFO: Average reward: 1.00 +/- 0.00
+2021-11-04 07:13:35,293:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:13:35,481:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:13:35,482:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:13:35,483:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:13:35,483:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:13:35,798:INFO: Evaluating...
+2021-11-04 07:13:35,814:INFO: Average reward: -0.20 +/- 0.00
+2021-11-04 07:16:07,982:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:16:08,168:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:16:08,171:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:16:08,180:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:16:08,181:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:16:08,484:INFO: Evaluating...
+2021-11-04 07:16:08,498:INFO: Average reward: -0.10 +/- 0.00
+2021-11-04 07:16:56,130:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:16:56,330:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:16:56,330:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:16:56,330:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:16:56,330:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:16:56,628:INFO: Evaluating...
+2021-11-04 07:16:56,644:INFO: Average reward: -1.50 +/- 0.00
+2021-11-04 07:17:20,457:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:17:20,723:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:17:20,723:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:17:20,723:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:17:20,723:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:17:21,056:INFO: Evaluating...
+2021-11-04 07:17:21,073:INFO: Average reward: -0.70 +/- 0.00
+2021-11-04 07:19:48,131:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:19:48,320:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:19:48,332:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:19:48,333:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:19:48,333:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:19:48,636:INFO: Evaluating...
+2021-11-04 07:19:48,649:INFO: Average reward: 1.00 +/- 0.00
+2021-11-04 07:20:29,638:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:20:29,820:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:20:29,822:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:20:29,823:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:20:29,824:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:20:30,134:INFO: Evaluating...
+2021-11-04 07:20:30,147:INFO: Average reward: 0.70 +/- 0.00
+2021-11-04 07:27:21,072:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:27:21,256:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:27:21,259:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:27:21,259:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:27:21,259:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:27:21,550:INFO: Evaluating...
+2021-11-04 07:27:21,565:INFO: Average reward: 0.10 +/- 0.00
+2021-11-04 07:29:18,958:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:29:19,142:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:29:19,154:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:29:19,155:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:29:19,155:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:29:19,456:INFO: Evaluating...
+2021-11-04 07:29:19,471:INFO: Average reward: 0.10 +/- 0.00
+2021-11-04 07:34:02,463:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-04 07:34:02,657:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:34:02,661:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:34:02,663:DEBUG: Creating converter from 7 to 5
+2021-11-04 07:34:02,665:DEBUG: Creating converter from 5 to 7
+2021-11-04 07:34:02,960:INFO: Evaluating...
+2021-11-04 07:34:02,973:INFO: Average reward: -0.90 +/- 0.00

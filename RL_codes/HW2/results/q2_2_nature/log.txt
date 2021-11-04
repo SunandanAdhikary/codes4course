@@ -4,3 +4,45 @@
 2021-11-03 18:43:11,582:DEBUG: Creating converter from 7 to 5
 2021-11-03 18:43:11,582:DEBUG: Creating converter from 5 to 7
 2021-11-03 18:43:12,146:INFO: Evaluating...
+2021-11-03 21:39:16,335:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 21:39:16,565:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:39:16,567:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:39:16,569:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:39:16,570:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:39:16,872:INFO: Evaluating...
+2021-11-03 21:39:54,578:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 21:39:54,806:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:39:54,808:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:39:54,809:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:39:54,810:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:39:55,130:INFO: Evaluating...
+2021-11-03 21:41:37,557:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 21:41:37,784:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:41:37,793:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:41:37,794:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:41:37,794:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:41:38,104:INFO: Evaluating...
+2021-11-03 21:46:43,802:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 21:46:44,039:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:46:44,040:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:46:44,041:DEBUG: Creating converter from 7 to 5
+2021-11-03 21:46:44,042:DEBUG: Creating converter from 5 to 7
+2021-11-03 21:46:44,342:INFO: Evaluating...
+2021-11-03 22:21:39,758:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 22:21:39,982:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:21:39,984:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:21:39,985:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:21:39,986:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:21:40,293:INFO: Evaluating...
+2021-11-03 22:21:58,484:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 22:21:58,706:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:21:58,708:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:21:58,709:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:21:58,710:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:21:59,023:INFO: Evaluating...
+2021-11-03 22:23:46,853:DEBUG: Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-11-03 22:23:47,078:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:23:47,088:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:23:47,089:DEBUG: Creating converter from 7 to 5
+2021-11-03 22:23:47,089:DEBUG: Creating converter from 5 to 7
+2021-11-03 22:23:47,380:INFO: Evaluating...
