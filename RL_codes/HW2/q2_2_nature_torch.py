@@ -83,12 +83,12 @@ class NatureQN(Linear):
         out = None
         ##############################################################
         ################ YOUR CODE HERE - 4-5 lines lines ################
-        state_flattenned = state#torch.flatten(state,start_dim=0,end_dim=2)
-        print(f"state_flattenned shape: {state_flattenned.shape}")
+        state_nncompatible = torch.transpose(torch.transpose(state,1,3),2,3) 
+        # (batch_size, img height, img width, nchannels x config.state_history) -> (batch_size, nchannels x config.state_history, img_height, img_width)
         if network == 'q_network':
-            out = self.q_network(state_flattenned)
+            out = self.q_network(state_nncompatible)
         elif network == 'target_network':
-            out = self.target_network(state_flattenned)
+            out = self.target_network(state_nncompatible)
         ##############################################################
         ######################## END YOUR CODE #######################
         return out
@@ -110,4 +110,9 @@ if __name__ == '__main__':
 
     # train model
     model = NatureQN(env, config)
+    import time # new
+    tic = time.time() # new
     model.run(exp_schedule, lr_schedule)
+    toc = time.time() # new
+    print(f"Nature dqn Training time: {toc-tic}") # new
+
