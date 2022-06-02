@@ -1,0 +1,25 @@
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

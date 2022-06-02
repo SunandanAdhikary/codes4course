@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 21 11:25:35 2022
+# Process ID: 26604
+# Current directory: F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34880 F:\TA\2021 Spring\HWSEC\Vivado Project\Accumulator\Accumulator.xpr
+# Log file: F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/vivado.log
+# Journal file: F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/Accumulator.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+launch_simulation -mode post-implementation -type functional
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+close_sim
+launch_simulation -mode post-implementation -type functional
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+current_sim simulation_1
+close_sim
+launch_simulation
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+close_sim
+launch_simulation
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+close_sim
+close_sim
+launch_simulation
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+relaunch_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config {F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/test_behav.wcfg}
+source test.tcl
+close_sim
+close_sim

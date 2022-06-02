@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_116.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_117.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_14.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_15.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_233.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_29.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_30.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_58.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/km_59.v" \
+"../../../../karatsuba_multiplier.srcs/sources_1/new/mod_233.v" \
+"../../../../karatsuba_multiplier.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

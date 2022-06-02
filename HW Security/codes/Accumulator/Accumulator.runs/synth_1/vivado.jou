@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 21 17:25:02 2022
+# Process ID: 35860
+# Current directory: F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/Accumulator.runs/synth_1
+# Command line: vivado.exe -log accumulator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source accumulator.tcl
+# Log file: F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/Accumulator.runs/synth_1/accumulator.vds
+# Journal file: F:/TA/2021 Spring/HWSEC/Vivado Project/Accumulator/Accumulator.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source accumulator.tcl -notrace

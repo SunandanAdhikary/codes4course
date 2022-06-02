@@ -1,0 +1,487 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  exam.sty  a style file for exams in the Dept of Maths
+%%               
+%%  concocted from: fancyheadings.sty and personal files by Paul Hafner
+%%  with minor amendments by David McIntyre 7/9/95, 7/5/96 and 16/5/97
+%%  and further amendments by David McIntyre 5/5/98
+%%
+%%  Revised for the post-nDeva style on 14/5/01
+%%
+%%  structure of the file: 
+%%                         first fancyheadings.sty with changes
+%%                         then the questions, answers and marks
+%%                         environments
+%%                         then default settings for pagesize etc.
+%%                         then a few commands for headers etc.
+%% 
+%%  PRH 22/8/94   v1.1
+%%  PRH 21/8/94   v1
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\typeout{ }
+\typeout{exam.sty  ---  version 3  ---  14 May 2001}
+\typeout{a style for exams for the Department of Mathematics}
+\typeout{ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%   the following is a slightly changed version of fancyheadings.sty
+%%   changes made relate to \def\@fancyhead#1#2#3#4#5
+%%   These changes make alignment of the top bits easier.
+%%
+%%   (the original is commented out)
+%%
+%%   PRH 21/8/94
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Save file as: FANCYHEADINGS.STY      Source: FILESERV@SHSU.BITNET  
+%% Also see FANCYHEADINGS.DOC for updated documentation of this file.
+%% Include the command SENDME STY.FANCYHEADINGS_DOC in the body of a
+%% mail message to FILESERV retrieve this file.
+% fancyheadings.sty version 1.0
+% Fancy headers and footers.
+% Piet van Oostrum, Dept of Computer Science, University of Utrecht
+% Padualaan 14, P.O. Box 80.089, 3508 TB Utrecht, The Netherlands
+% Telephone: +31-30-531806. piet@cs.ruu.nl (mcvax!hp4nl!ruuinf!piet)
+% March, 1989.
+
+% Here is a documentstylestyle option that allows you to customize your
+% page headers and footers in an easy way. It combines features that were
+% separately available in other pagestyles, without introducing much
+% complexity. You can define:
+%     - three-part headers and footers
+%     - rules in header and footer
+%     - headers and footers wider than \textwidth
+%     - multiline headers and footers
+%     - separate headers and footers for even and odd pages
+%     - separate headers and footers for chapter pages
+% 
+% To use this pagestyle, you must include the ``fancyheadings'' style
+% option in your \documentstyle, and issue the \pagestyle{fancy} command.
+% The \pagestyle{fancy} command should be issued after any changes made to
+% \textwidth.
+% 
+% The page layout will be as follows:
+% 
+%               LHEAD          CHEAD          RHEAD
+%               ----------------------------------- (rule)
+% 
+%                            page body
+% 
+% 
+%               ----------------------------------- (rule)
+%               LFOOT          CFOOT          RFOOT
+% 
+% The L-fields will be leftadjusted, the C-fields centered and the
+% R-fields rightadjusted.
+% Each of the six fields and the two rules can be defined separately.
+% 
+% Simple use:
+% 
+% The header and footer fields can be defined by commands \lhead{LHEAD}
+% and so on for the other fields. If the field depends on something in the
+% document (e.g. section titles) you must in general use the \markboth and
+% \markright commands, otherwise a title may end on the wrong page. You
+% can do this e.g. by redefining the commands \chaptermark, \sectionmark
+% and so on (see example below). The defaults for these marks are as in
+% the standard pagestyles. The marks can be put into a header or footer
+% field by referencing \leftmark and \rightmark.
+% 
+% Rules in header and footer
+% 
+% The thickness of the rules below the header and above the footer can be
+% changed by redefining the length parameters \headrulewidth (default
+% 0.4pt) and \footrulewidth (default 0). These may be redefined by the
+% \setlength command. A thickness of 0pt makes the rule invisible.
+% If you want to make more complicated changes, you have to redefine the
+% commands \headrule and/or \footrule.
+% 
+% Headers and footers wider than \textwidth
+% 
+% The headers and footers are set in a box of width \headwidth. The
+% default for this is the value of \textwidth. You can make it wider (or
+% smaller) by redefining \headwidth with the \setlength or \addtolength
+% command. The headers and footers will stick out the page on the same
+% side as the marginal notes. For example to include the marginal notes,
+% add both \marginparsep and \marginparwidth to \headwidth (see also the
+% example below).
+% 
+% Multiline headers and footers
+% 
+% Each of the six fields is set in an appropriate parbox, so you can put a
+% multiline part in it with the \\ command. It is also possible to put
+% extra space in it with the \vspace command. Note that if you do this you
+% will probably have to increase the \headheight or \footskip lengths.
+% 
+% Separate headers and footers for even and odd pages
+% 
+% If you want the headers and footers to be different on even- and
+% odd-numbered pages in the ``twoside'' style, the field-defining macros
+% can be given an optional argument, to be used on the even-numbered
+% pages, like \lhead[EVEN-LHEAD]{ODD-RHEAD}.
+% 
+% Separate headers and footers for chapter pages
+% 
+% LaTeX gives a \thispagestyle{plain} command for the first page of the
+% document, the first page of each chapter and a couple of other pages. It
+% might be incompatible with your pagestyle. In this case you can use a
+% slightly different version of the pagestyle, called \pagestyle{fancyplain}. 
+% This pagestyle redefines the pagestyle ``plain'' to also use pagestyle
+% ``fancy'' with the following modifications:
+%     - the thicknesses of the rules is defined by \plainheadrulewidth and
+%       \plainfootrulewidth (both default 0).
+%     - the 6 fields may be defined separately for the plain pages by
+%       giving them the value \fancyplain{PLAIN-VALUE}{NORMAL-VALUE}. This
+%       construct may be used in both the optional argument and the normal
+%       argument. Thus \lhead[\fancyplain{F1}{F2}]{\fancyplain{F3}{F4}}
+%       specifies the LHEAD value in a two-sided document:
+%       F1 on an even-numbered ``plain'' page
+%       F2 on an even-numbered normal page
+%       F3 on an odd-numbered ``plain'' page
+%       F4 on an odd-numbered normal page.
+% 
+% Defaults:
+% 
+% \headrulewidth              0.4pt
+% \footrulewidth                0pt
+% \plainheadrulewidth   0pt
+% \plainfootrulewidth   0pt
+% 
+% \lhead[\fancyplain{}{\sl\rightmark}]{\fancyplain{}{\sl\leftmark}}
+% %  i.e. empty on ``plain'' pages \rightmark on even, \leftmark on odd pages
+% \chead{}
+% \rhead[\fancyplain{}{\sl\leftmark}]{\fancyplain{}{\sl\rightmark}}
+% %  i.e. empty on ``plain'' pages \leftmark on even, \rightmark on odd pages
+% \lfoot{}
+% \cfoot{\rm\thepage} % page number
+% \rfoot{}
+% 
+% Examples:
+% 
+% To put two lines containing the section title and the subsection title
+% in the righthandside corner, use:
+% 
+% \documentstyle[fancyheadings]{article}
+% \pagestyle{fancy}
+% \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+% \renewcommand{\subsectionmark}[1]{\markright{#1}}
+% \rfoot{\leftmark\\\rightmark}
+% 
+% The following definitions give an approximation of the style used in the
+% LaTeX book:
+% 
+% \documentstyle[fancyheadings]{book}
+% \pagestyle{fancyplain}
+% \addtolength{\headwidth}{\marginparsep}
+% \addtolength{\headwidth}{\marginparwidth}
+% \renewcommand{\chaptermark}[1]{\markboth{#1}{#1}} % remember chapter title
+% \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+%                                                 % section number and title
+% \lhead[\fancyplain{}{\bf\thepage}]{\fancyplain{}{\bf\rightmark}}
+% \rhead[\fancyplain{}{\bf\leftmark}]{\fancyplain{}{\bf\thepage}}
+% \cfoot{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\lhead{\@ifnextchar[{\@xlhead}{\@ylhead}}
+\def\@xlhead[#1]#2{\gdef\@elhead{#1}\gdef\@olhead{#2}}
+\def\@ylhead#1{\gdef\@elhead{#1}\gdef\@olhead{#1}}
+
+\def\chead{\@ifnextchar[{\@xchead}{\@ychead}}
+\def\@xchead[#1]#2{\gdef\@echead{#1}\gdef\@ochead{#2}}
+\def\@ychead#1{\gdef\@echead{#1}\gdef\@ochead{#1}}
+
+\def\rhead{\@ifnextchar[{\@xrhead}{\@yrhead}}
+\def\@xrhead[#1]#2{\gdef\@erhead{#1}\gdef\@orhead{#2}}
+\def\@yrhead#1{\gdef\@erhead{#1}\gdef\@orhead{#1}}
+
+\def\lfoot{\@ifnextchar[{\@xlfoot}{\@ylfoot}}
+\def\@xlfoot[#1]#2{\gdef\@elfoot{#1}\gdef\@olfoot{#2}}
+\def\@ylfoot#1{\gdef\@elfoot{#1}\gdef\@olfoot{#1}}
+
+\def\cfoot{\@ifnextchar[{\@xcfoot}{\@ycfoot}}
+\def\@xcfoot[#1]#2{\gdef\@ecfoot{#1}\gdef\@ocfoot{#2}}
+\def\@ycfoot#1{\gdef\@ecfoot{#1}\gdef\@ocfoot{#1}}
+
+\def\rfoot{\@ifnextchar[{\@xrfoot}{\@yrfoot}}
+\def\@xrfoot[#1]#2{\gdef\@erfoot{#1}\gdef\@orfoot{#2}}
+\def\@yrfoot#1{\gdef\@erfoot{#1}\gdef\@orfoot{#1}}
+
+\newdimen\headrulewidth
+\newdimen\footrulewidth
+\newdimen\plainheadrulewidth
+\newdimen\plainfootrulewidth
+\newdimen\headwidth
+\newif\if@fancyplain \@fancyplainfalse
+\def\fancyplain#1#2{\if@fancyplain#1\else#2\fi}
+
+% Initialization of the head and foot text.
+
+\headrulewidth 0.4pt
+\footrulewidth\z@
+\plainheadrulewidth\z@
+\plainfootrulewidth\z@
+
+\lhead[\fancyplain{}{\sl\rightmark}]{\fancyplain{}{\sl\leftmark}}
+%  i.e. empty on ``plain'' pages \rightmark on even, \leftmark on odd pages
+\chead{}
+\rhead[\fancyplain{}{\sl\leftmark}]{\fancyplain{}{\sl\rightmark}}
+%  i.e. empty on ``plain'' pages \leftmark on even, \rightmark on odd pages
+\lfoot{}
+\cfoot{\rm\thepage} % page number
+\rfoot{}
+
+% Put together a header or footer given the left, center and
+% right text, fillers at left and right and a rule.
+% The \lap commands put the text into an hbox of zero size,
+% so overlapping text does not generate an errormessage.
+
+%%%%\def\@fancyhead#1#2#3#4#5{#1\hbox to\headwidth{\vbox{\hbox
+%%%%{\rlap{\parbox[b]{\headwidth}{\raggedright#2\strut}}\hfill
+%%%%\parbox[b]{\headwidth}{\centering#3\strut}\hfill
+%%%%\llap{\parbox[b]{\headwidth}{\raggedleft#4\strut}}}\headrule}}#5}
+
+
+\def\@fancyhead#1#2#3#4#5{#1{\rlap{#2}}\hbox to\headwidth{%
+\hss
+#3\hss
+}%\hbox to 0cm{\hss{$\smash{#4}$}}#5}
+{\llap{#4}}#5}
+
+\def\@fancyfoot#1#2#3#4#5{#1\hbox to\headwidth{\vbox{\footrule
+\hbox{\rlap{\parbox[t]{\headwidth}{\raggedright#2\strut}}\hfill
+\parbox[t]{\headwidth}{\centering#3\strut}\hfill
+\llap{\parbox[t]{\headwidth}{\raggedleft#4\strut}}}}}#5}
+
+\def\headrule{{\if@fancyplain\headrulewidth\plainheadrulewidth\fi
+\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+
+\def\footrule{{\if@fancyplain\footrulewidth\plainfootrulewidth\fi
+\vskip-0.3\normalbaselineskip\vskip-\footrulewidth
+\hrule\@width\headwidth\@height\footrulewidth\vskip0.3\normalbaselineskip}}
+
+\def\ps@fancy{
+\let\@mkboth\markboth
+\@ifundefined{chapter}{\def\sectionmark##1{\markboth
+{\uppercase{\ifnum \c@secnumdepth>\z@
+ \thesection\hskip 1em\relax \fi ##1}}{}}
+\def\subsectionmark##1{\markright {\ifnum \c@secnumdepth >\@ne
+ \thesubsection\hskip 1em\relax \fi ##1}}}
+{\def\chaptermark##1{\markboth {\uppercase{\ifnum \c@secnumdepth>\m@ne
+ \@chapapp\ \thechapter. \ \fi ##1}}{}}
+\def\sectionmark##1{\markright{\uppercase{\ifnum \c@secnumdepth >\z@
+ \thesection. \ \fi ##1}}}}
+\def\@oddhead{\@fancyhead\relax\@olhead\@ochead\@orhead\hss}
+\def\@oddfoot{\@fancyfoot\relax\@olfoot\@ocfoot\@orfoot\hss}
+\def\@evenhead{\@fancyhead\hss\@elhead\@echead\@erhead\relax}
+\def\@evenfoot{\@fancyfoot\hss\@elfoot\@ecfoot\@erfoot\relax}
+\headwidth\textwidth}
+\def\ps@fancyplain{\ps@fancy \let\ps@plain\ps@plain@fancy}
+\def\ps@plain@fancy{\@fancyplaintrue\ps@fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  an environment for questions: \begin{questions} ... \end{questions}                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{questions}%
+{\setlength{\leftmargini}{0pt}
+\setlength{\leftmarginii}{8mm}
+\setlength{\leftmarginiii}{10mm}
+
+\renewcommand{\labelenumi}{{\bf \theenumi.}}
+\renewcommand{\labelenumiii}{(\theenumiii)}
+\begin{enumerate}\addtolength{\itemsep}{2mm}
+\def\question{\filbreak\item}\let\ques\question}
+{\end{enumerate}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  an environment for answers for multiple choice questions: 
+%%% \begin{answers} ... \end{answers}                  
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{answers}{\vspace{2mm}\begin{enumerate}
+\addtolength{\itemsep}{2mm}
+\renewcommand{\labelenumii}{(\theenumii)}}
+  {\end{enumerate}\vfil\penalty-200\vfilneg}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%  a new command \marks{n} to indicate the marks 
+%%  awarded for a particular question or part
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\marks#1{{%
+\hskip20pt plus 1 fil(#1 mark\ifnum#1=1\else s\fi)
+\parfillskip=0pt\par}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% setting page size and other layout defaults
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\textwidth}{16.5cm}
+\setlength{\headwidth}{8cm}
+\setlength{\textheight}{23.8cm}
+\voffset-2.3cm
+%\hoffset-0.2cm
+\oddsidemargin= 0 cm
+\evensidemargin=0cm
+%%%%%\footrulewidth0.4pt
+\headrulewidth0pt
+\sloppy
+\parindent0pt
+\parskip3ex
+\pagestyle{fancy}
+\headsep2cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%   Some commands for headers, etc
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% redefine \begin{document} to include the top stuff
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\mydocument\document
+\renewcommand{\document}{\mydocument\topstuff\notestuff}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% create a 20pt font for the UNIVERSITY OF AUCKLAND: make it Unifont
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\font\Unifont=cmr12 at 20pt
+%\makeatletter
+%\def\Huge{\@setsize\Huge{22pt}\xxpt\@xxpt}
+%\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% \topstuff creates the start of the paper 
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\topstuff}
+{\begin{center}
+    \leavevmode\vspace{-1cm}\par
+    {\Unifont Indian Institute of Technology (IIT-Kharagpur)}\\[.5cm]
+    \large\bf
+    %\newbox\semesterbox
+    %\setbox\semesterbox=\hbox{\uppercase\expandafter{\semesterv}}
+    %\rule{\wd\semesterbox}{0.4pt}\\[0.5mm]
+    %\usebox\semesterbox\\[-2mm]
+    %\rule{\wd\semesterbox}{0.4pt}\\[5mm]
+    %\rule{9cm}{0.4pt}\\[0.5mm]
+    \uppercase\expandafter{\semesterv} Semester, \yearv\\[1mm]
+    %Campus: \campusv\\[-2mm]
+   % \rule{9cm}{0.4pt}\\[5mm]
+   {\uppercase\expandafter{\departmentv}}\\[3mm]
+   {\expandafter{\subjectv}}\\[3mm]
+    \titlev\\[5mm]   
+    {\expandafter{Full Marks: \fullmarksv}}
+    \if*\subtwov\else{\\\uppercase\expandafter{\subtwov}}\fi\\[3mm]
+    Time allowed: {\expandafter{\timev}} hours
+  \end{center}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% the stuff going into the topstuff: note
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\def\thenote#1{\begin{itemize}
+%\item[{\bf\underline{NOTE}: \ \ }] 
+%#1\end{itemize}
+%}
+\newif\ifnotepresent
+\notepresentfalse
+\def\note#1{\def\thenotev{#1}\notepresenttrue}
+\def\notestuff{\ifnotepresent
+%\settowidth{\leftmargini}{\bf Instructions:}
+\addtolength{\leftmargini}{2cm}
+\begin{itemize}
+\item[{\bf INSTRUCTIONS:}] 
+%\setlength{\leftmargin}{8cm}
+\thenotev\end{itemize}\fi
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% redefine \enddocument to stop CONTINUED from appearing in the footer 
+%%% and to insert the famous rule which signals the last page
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\myenddocument\enddocument
+\def\enddocument{\[
+\rule{5cm}{0.4pt}
+\]
+\rfoot{}\myenddocument}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% define \attachment and \answersheet: they break the page
+%%% and cause the appropriate footer to appear on the preceding page
+%%% \answersheet also invokes the command \answersheettop
+%%% which prompts the student for name and ID
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\attachment{\rfoot{ATTACHMENT FOLLOWS}\newpage
+\lhead{\versionmark ATTACHMENT}\rfoot{CONTINUED}}
+\newcommand\answersheet{\rfoot{ANSWER SHEET FOLLOWS}\newpage
+\lhead{\versionmark ANSWER SHEET}\rfoot{CONTINUED}
+\answersheettop}
+\newcommand{\answersheettop}{Candidate's Name:  \rule{7cm}{0.4pt}
+ID No: \rule{3cm}{0.4pt}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% define \version: this causes VERSION n to appear in the top 
+%%% left-hand corner of the page for multiple-choice exams.
+%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\versionmark{
+   \raise1.42cm\hbox to 0pt{\if*\versionv\else VERSION \versionv\hss\fi}}
+\newcommand\version[1]{\def\versionv{#1}}
+\newcommand\paper[1]{\def\paperv{#1}}
+\def\time#1{\def\timev{#1}}
+\def\subject#1{\def\subjectv{#1}}
+\def\department#1{\def\departmentv{#1}}
+\def\fullmarks#1{\def\fullmarksv{#1}}
+\def\subjecttwo#1{\def\subtwov{#1}}
+\def\title#1{\def\titlev{#1}}
+%\def\degree#1{\def\degreev{#1}}
+\def\degree#1{\typeout{ }
+  \typeout{The ``degree'' command is no longer valid.}
+  \typeout{Please use the ``oldexam'' package for old exams.}
+  \typeout{ }
+}
+\def\semester#1{\def\semesterv{#1}}
+\def\campus#1{\def\campusv{#1}}
+\let\thisyear\year
+\def\year#1{\def\yearv{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% the defaults
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\year{\number\thisyear}
+\time{three}
+\subject{mathematics}
+\department{Computer Science and Engineering}
+\fullmarks{100}
+\subjecttwo{*}       
+\version{*}
+%\title{you must give the {\tt $\backslash$title} command}
+\paper{you must give the {\tt $\backslash$paper} command}
+\semester{you must give the {\tt $\backslash$semester} command}
+%\campus{City}
+%\lhead{\versionmark}
+%%\chead{\ifnum\thepage=1{\Unifont THE UNIVERSITY OF AUCKLAND}\else
+%% -- \thepage\ --\fi}
+\chead{\ifnum\thepage=1\else
+ -- \thepage\ --\fi}
+\rhead{\vbox{\bf\baselineskip14pt\raggedleft\paperv}}
+%\rfoot{CONTINUED} 
+\cfoot{}
+ 
+
+

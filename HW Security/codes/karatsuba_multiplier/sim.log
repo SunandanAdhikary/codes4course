@@ -1,0 +1,800 @@
+start_gui
+open_project /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Runs 36-271] Incremental checkpoint part, xczu7ev-ffvc1156-2-e, does not match run part, xc7a200tsbg484-1.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/hev-sd/xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Feb  4 12:38:47 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Feb  4 16:43:59 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Feb  4 18:51:06 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Feb  4 21:35:06 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Feb  4 23:07:11 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Feb  5 06:24:12 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Feb  5 06:55:39 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Feb  6 23:09:11 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Feb  6 23:15:08 2022] Launched impl_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 8377.953 ; gain = 34.961 ; free physical = 2791 ; free virtual = 133637
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 8390.961 ; gain = 4.996 ; free physical = 2995 ; free virtual = 133782
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 8390.961 ; gain = 0.000 ; free physical = 3070 ; free virtual = 133863
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8392.957 ; gain = 0.000 ; free physical = 2181 ; free virtual = 133165
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+WARNING: [VRFC 10-8497] literal value 'b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 truncated to fit in 233 bits [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v:41]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8392.957 ; gain = 0.000 ; free physical = 2055 ; free virtual = 133133
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8401.953 ; gain = 3.992 ; free physical = 2040 ; free virtual = 133118
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+ERROR: [VRFC 10-4982] syntax error near '"a=%b' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v:39]
+ERROR: [VRFC 10-4982] syntax error near 'end' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v:45]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword end used in incorrect context [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v:45]
+ERROR: [VRFC 10-2865] module 'test' ignored due to previous errors [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'd' is not permitted [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v:28]
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/utils_1/imports/synth_1/hkm_233.dcp with file /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/hkm_233.dcp
+launch_runs synth_1 -jobs 4
+[Thu Feb 10 12:55:53 2022] Launched synth_1...
+Run output will be captured here: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'test'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/hev-sd/xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hkm_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_116
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_117
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_14
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_15
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_29
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_30
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_58
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module km_59
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_233
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/hev-sd/xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 29 differs from formal bit length 15 for port 'a' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.km_14
+Compiling module xil_defaultlib.km_15
+Compiling module xil_defaultlib.km_29
+Compiling module xil_defaultlib.km_58
+Compiling module xil_defaultlib.km_116
+Compiling module xil_defaultlib.km_30
+Compiling module xil_defaultlib.km_59
+Compiling module xil_defaultlib.km_117
+Compiling module xil_defaultlib.km_233
+Compiling module xil_defaultlib.mod_233
+Compiling module xil_defaultlib.hkm_233
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0a=01100010001111010010010101100010d=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                                                      x                                                                      x
+                  10a=01100010001111010010010101100010d=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010                                                                      x                                                                      x
+                  20a=01100010001111010010010101100010d=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010                                                                      3                                                                      6
+                  50a=01100010001111010010010101100010d=10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                                                                      3 6901746346790563787434755862277025452451108972189276021094002804654081
+                  80a=01100010001111010010010101100010d=10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000                                                                      9 6901746346790563787434755862277025452451108972245944418888438547218436
+$finish called at time : 180 ns : File "/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sim_1/new/test.v" Line 44
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 8446.980 ; gain = 24.004 ; free physical = 2301 ; free virtual = 133002
+save_wave_config {/home/hev-sd/wrkspc/karatsuba_multiplier/hkm_test_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/hev-sd/wrkspc/karatsuba_multiplier/hkm_test_behav.wcfg
+set_property xsim.view /home/hev-sd/wrkspc/karatsuba_multiplier/hkm_test_behav.wcfg [get_filesets sim_1]

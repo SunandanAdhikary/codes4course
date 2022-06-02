@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/TA/HWSEC/Accumulator/Accumulator.sim/sim_1/synth/func/xsim/test_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accumulator
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module dff
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/TA/HWSEC/Accumulator/Accumulator.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

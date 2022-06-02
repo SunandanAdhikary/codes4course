@@ -1,0 +1,245 @@
+
+*** Running vivado
+    with args -log hkm_233.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hkm_233.tcl
+
+
+****** Vivado v2021.2.1 (64-bit)
+  **** SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+  **** IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source hkm_233.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/utils_1/imports/synth_1/hkm_233.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/utils_1/imports/synth_1/hkm_233.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top hkm_233 -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 666532
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2611.246 ; gain = 0.000 ; free physical = 643 ; free virtual = 131720
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hkm_233' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v:22]
+INFO: [Synth 8-6157] synthesizing module 'km_233' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_116' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_58' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_29' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_14' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_14' (1#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_14.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_15' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_15' (2#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_15.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_29' (3#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_29.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_58' (4#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_58.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_116' (5#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_116.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_117' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_59' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v:23]
+INFO: [Synth 8-6157] synthesizing module 'km_30' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:23]
+WARNING: [Synth 8-689] width (29) of port connection 'a' does not match port width (15) of module 'km_15' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'km_30' (6#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_30.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_59' (7#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_59.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_117' (8#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_117.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'km_233' (9#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/km_233.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mod_233' [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mod_233' (10#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/mod_233.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hkm_233' (11#1) [/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.srcs/sources_1/new/hybrid_karatsuba.v:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2611.246 ; gain = 0.000 ; free physical = 408 ; free virtual = 131429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2611.246 ; gain = 0.000 ; free physical = 404 ; free virtual = 131425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2619.105 ; gain = 7.859 ; free physical = 404 ; free virtual = 131424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2619.105 ; gain = 7.859 ; free physical = 1192 ; free virtual = 132216
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input    116 Bit         XORs := 1     
+	   2 Input    116 Bit         XORs := 2     
+	   4 Input    114 Bit         XORs := 1     
+	   3 Input     85 Bit         XORs := 1     
+	   4 Input     73 Bit         XORs := 1     
+	   3 Input     73 Bit         XORs := 1     
+	   2 Input     58 Bit         XORs := 6     
+	   4 Input     58 Bit         XORs := 2     
+	   4 Input     57 Bit         XORs := 2     
+	   4 Input     56 Bit         XORs := 2     
+	   2 Input     29 Bit         XORs := 18    
+	   4 Input     29 Bit         XORs := 4     
+	   4 Input     28 Bit         XORs := 10    
+	   4 Input     27 Bit         XORs := 4     
+	   2 Input     15 Bit         XORs := 16    
+	   4 Input     14 Bit         XORs := 35    
+	   2 Input     14 Bit         XORs := 38    
+	   4 Input     12 Bit         XORs := 19    
+	   3 Input      2 Bit         XORs := 26    
+	   3 Input      1 Bit         XORs := 202   
+	   4 Input      1 Bit         XORs := 162   
+	   5 Input      1 Bit         XORs := 162   
+	   6 Input      1 Bit         XORs := 162   
+	   7 Input      1 Bit         XORs := 162   
+	   8 Input      1 Bit         XORs := 162   
+	   9 Input      1 Bit         XORs := 162   
+	  10 Input      1 Bit         XORs := 162   
+	  11 Input      1 Bit         XORs := 162   
+	  12 Input      1 Bit         XORs := 162   
+	  13 Input      1 Bit         XORs := 162   
+	  14 Input      1 Bit         XORs := 143   
+	   2 Input      1 Bit         XORs := 164   
+	  15 Input      1 Bit         XORs := 62    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 3322.340 ; gain = 711.094 ; free physical = 530 ; free virtual = 131334
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 3322.340 ; gain = 711.094 ; free physical = 530 ; free virtual = 131333
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:26 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 688 ; free virtual = 131393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 688 ; free virtual = 131393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 688 ; free virtual = 131393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 687 ; free virtual = 131393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 687 ; free virtual = 131393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 687 ; free virtual = 131393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 687 ; free virtual = 131393
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |  1015|
+|2     |LUT3 |   175|
+|3     |LUT4 |  2624|
+|4     |LUT5 |  1718|
+|5     |LUT6 |  7610|
+|6     |IBUF |   466|
+|7     |OBUF |   233|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+---------+------+
+|      |Instance |Module   |Cells |
++------+---------+---------+------+
+|1     |top      |         | 13841|
+|2     |  km1    |km_233   | 13134|
+|3     |    km2a |km_116   |  1947|
+|4     |    km2b |km_117   |  2683|
+|5     |    km2c |km_117_0 |  2329|
++------+---------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 687 ; free virtual = 131393
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3417.340 ; gain = 806.094 ; free physical = 690 ; free virtual = 131395
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 3417.348 ; gain = 806.094 ; free physical = 690 ; free virtual = 131395
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3417.348 ; gain = 0.000 ; free physical = 782 ; free virtual = 131488
+INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3473.367 ; gain = 0.000 ; free physical = 707 ; free virtual = 131413
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 466 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 466 instances
+
+Synth Design complete, checksum: bf8c5332
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:35 . Memory (MB): peak = 3473.367 ; gain = 862.266 ; free physical = 916 ; free virtual = 131622
+INFO: [Common 17-1381] The checkpoint '/home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/hkm_233.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hkm_233_utilization_synth.rpt -pb hkm_233_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 10 12:57:42 2022...

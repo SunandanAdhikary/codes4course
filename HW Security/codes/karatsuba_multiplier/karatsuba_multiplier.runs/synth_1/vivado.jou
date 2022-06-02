@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2.1 (64-bit)
+# SW Build 3414424 on Sun Dec 19 10:57:14 MST 2021
+# IP Build 3405791 on Sun Dec 19 15:54:35 MST 2021
+# Start of session at: Thu Feb 10 12:55:55 2022
+# Process ID: 666484
+# Current directory: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1
+# Command line: vivado -log hkm_233.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hkm_233.tcl
+# Log file: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/hkm_233.vds
+# Journal file: /home/hev-sd/wrkspc/karatsuba_multiplier/karatsuba_multiplier.runs/synth_1/vivado.jou
+# Running On: hevsd-PowerEdge-R540, OS: Linux, CPU Frequency: 3359.539 MHz, CPU Physical cores: 4, Host memory: 33277 MB
+#-----------------------------------------------------------
+source hkm_233.tcl -notrace

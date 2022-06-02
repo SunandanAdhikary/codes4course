@@ -1,0 +1,2 @@
+pdflatex endsem2016.tex
+evince endsem2016.pdf &
